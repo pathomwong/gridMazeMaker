@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Maze Maker!</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Monoton">
+    <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/smoothness/jquery-ui.css">
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+</head>
+<body>
+    <h1>Lab: Maze Maker</h1>
+
+    <h2>Choose Maze Size</h2>
+    <form id="sizePicker">
+        Grid Height:
+        <input type="number" id="inputHeight" name="height" min="1" value="30">
+        Grid Width:
+        <input type="number" id="inputWidth" name="width" min="1" value="30">
+        <input type="submit">
+    </form>
+    <hr/>
+    <button id="sloveMaze">Slove Maze</button>
+    <!--ul>
+          <li><div class="colorBox startPoint"></div></li>
+          <li>Start Point</li>
+          <li>&nbsp;&nbsp;</li>
+          <li><div class="colorBox goal"></div></li>
+          <li>Goal</li>
+          <li>&nbsp;&nbsp;</li>
+          <li>Use arrow key to move round</li>
+    </ul-->
+    <hr/>
+    <h2>Maze</h2>
+    <table id="pixelCanvas"></table>
+    <div id="dialog" title="Win" style="display:none;">
+        <p>You Win!</p>
+    </div>
+    <script src="designs.js"></script>
+</body>
+</html>
